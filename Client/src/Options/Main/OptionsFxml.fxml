@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@OptionsStyle.css" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Options.Main.OptionsCon">
+    <children>
+        <MediaView fx:id="mediaView" fitHeight="1000.0" fitWidth="1900.0" />
+        <MediaView fx:id="front" fitHeight="1000.0" fitWidth="1900.0" opacity="0.4" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff40" height="728.0" layoutX="128.0" layoutY="204.0" stroke="TRANSPARENT" strokeDashOffset="6.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="78.0" strokeWidth="6.0" visible="false" width="663.0">
+            <effect>
+                <Glow level="0.0">
+                    <input>
+                        <InnerShadow>
+                            <input>
+                                <DropShadow />
+                            </input>
+                        </InnerShadow>
+                    </input>
+                </Glow>
+            </effect>
+        </Rectangle>
+        <Label fx:id="optionLbl" layoutX="310.0" layoutY="159.0" text="Options">
+            <font>
+                <Font size="120.0" />
+            </font>
+        </Label>
+        <Label fx:id="volumeLbl" layoutX="172.0" layoutY="336.0" text="Volume">
+            <font>
+                <Font size="81.0" />
+            </font>
+        </Label>
+        <CheckBox fx:id="mute" layoutX="191.0" layoutY="456.0" mnemonicParsing="false" text="Music">
+            <font>
+                <Font size="63.0" />
+            </font>
+        </CheckBox>
+        <CheckBox fx:id="SFX" layoutX="191.0" layoutY="575.0" mnemonicParsing="false" text="SFX">
+            <font>
+                <Font size="63.0" />
+            </font>
+        </CheckBox>
+        <Slider fx:id="volume" layoutX="401.0" layoutY="381.0" prefHeight="45.0" prefWidth="306.0" value="50.0" />
+        <Button fx:id="back" layoutX="1709.0" layoutY="959.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="167.0" stylesheets="@OptionsStyle.css" text="Back">
+         <font>
+            <Font size="50.0" />
+         </font></Button>
+      <Label fx:id="accountLbl" layoutX="191.0" layoutY="713.0" onMouseClicked="#openAcSetting" text="Account Setting">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="friendLbl" layoutX="191.0" layoutY="798.0" text="Friends List" onMouseClicked="#openFrSetting">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

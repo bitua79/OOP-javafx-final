@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@GameStyle.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.Games.Common.ChooseFrCon">
+
+    <children>
+        <ImageView fx:id="backGif" fitHeight="1097.0" fitWidth="1983.0" opacity="0.46" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Resources/Photos/GameListBack.gif" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="imageView" fitHeight="777.0" fitWidth="778.0" layoutX="562.0" layoutY="176.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Resources/Photos/FrientList.jpg" />
+            </image>
+        </ImageView>
+        <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" height="523.0" layoutX="644.0" layoutY="302.0" strokeType="INSIDE" width="620.0">
+            <fill>
+                <LinearGradient endX="0.5942028985507246" endY="0.31400966183574874">
+                    <stops>
+                        <Stop color="#f0dcb60d" />
+                        <Stop color="#d6c1d600" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </fill>
+            <stroke>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="#f5dfb5" />
+                        <Stop color="#f5dfb5" offset="0.007380073800738007" />
+                        <Stop color="PLUM" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </stroke>
+        </Rectangle>
+        <Label fx:id="label" alignment="CENTER" layoutX="728.0" layoutY="211.0" prefHeight="63.0" prefWidth="451.0" text="choose a friend to play with!" textAlignment="CENTER" />
+        <Button fx:id="back" layoutX="608.0" layoutY="851.0" mnemonicParsing="false" text="Back" />
+        <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" hmax="0.0" layoutX="644.0" layoutY="306.0" prefHeight="515.0" prefWidth="620.0">
+            <content>
+                <VBox fx:id="vBox" prefHeight="589.0" prefWidth="620.0" spacing="10.0" />
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

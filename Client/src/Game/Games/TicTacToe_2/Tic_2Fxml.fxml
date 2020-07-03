@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainAnchorPane" maxHeight="1080.0" minHeight="1080.0" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@../Common/GameStyle.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+
+    <children>
+        <MediaView fx:id="mediaView" fitHeight="1000.0" fitWidth="1900.0" layoutX="31.0" />
+        <Button fx:id="send" layoutX="20.0" layoutY="918.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="170.0" text="Send" />
+        <Button fx:id="exit" contentDisplay="BOTTOM" layoutX="31.0" mnemonicParsing="false" opacity="0.72" prefHeight="87.0" prefWidth="127.0" text="Exit" />
+        <Button fx:id="mute" contentDisplay="BOTTOM" layoutX="20.0" mnemonicParsing="false" opacity="0.72" prefHeight="87.0" prefWidth="145.0" text="Mute" />
+        <Button fx:id="menu" contentDisplay="BOTTOM" layoutX="20.0" layoutY="10.0" mnemonicParsing="false" opacity="0.72" prefHeight="87.0" text="Menu" />
+        <TextArea fx:id="typeArea" editable="true" layoutX="210.0" layoutY="895.0" opacity="0.8" prefHeight="136.0" prefWidth="1125.0" wrapText="true" />
+        <Button fx:id="options" graphicTextGap="5.0" prefHeight="134.0" prefWidth="165.0" style="-fx-background-color: linear-gradient(to right, thistle,  #BAA19A); -fx-background-radius: 20; -fx-border-width: 4;">
+            <textFill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.8666666746139526" green="0.6274510025978088" blue="0.8666666746139526" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="1.0" green="1.0" blue="1.0" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </textFill>
+            <graphic>
+                <ImageView fx:id="optionsIm" fitHeight="108.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Resources/Photos/Options.png" />
+                    </image>
+                </ImageView>
+            </graphic></Button>
+      <AnchorPane fx:id="anchorPane" layoutX="1372.0" layoutY="18.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1035.0" prefWidth="543.0">
+         <children>
+            <Rectangle fx:id="backRec" arcHeight="5.0" arcWidth="5.0" height="1013.0" layoutX="8.0" layoutY="16.0" strokeType="INSIDE" width="526.0">
+               <fill>
+                  <LinearGradient endX="0.6297709632465858" endY="0.1488549636520502" startY="0.15267175572519084">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8600000143051147" green="0.6277999877929688" blue="0.8600000143051147" opacity="0.3356401324272156" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007633587786259542">
+                           <color>
+                              <Color red="0.8600000143051147" green="0.6277999877929688" blue="0.8600000143051147" opacity="0.3356401324272156" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.9090295932238834">
+                           <color>
+                              <Color red="0.9607843160629272" green="0.8705882430076599" blue="0.7019608020782471" opacity="0.36000001430511475" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.9969465648854962">
+                           <color>
+                              <Color red="0.9607843160629272" green="0.8705882430076599" blue="0.7019608020782471" opacity="0.36000001430511475" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9599999785423279" green="0.8726400136947632" blue="0.7103999853134155" opacity="0.33231836557388306" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <stroke>
+                  <LinearGradient endX="0.6297709632465858" endY="0.1488549636520502" startY="0.15267175572519084">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8600000143051147" green="0.6277999877929688" blue="0.8600000143051147" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007633587786259542">
+                           <color>
+                              <Color red="0.8600000143051147" green="0.6277999877929688" blue="0.8600000143051147" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.5226027397260273">
+                           <color>
+                              <Color red="0.8600000143051147" green="0.6277999877929688" blue="0.8600000143051147" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.9090295932238834">
+                           <color>
+                              <Color red="0.9607843160629272" green="0.8705882430076599" blue="0.7019608020782471" opacity="0.36000001430511475" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.9969465648854962">
+                           <color>
+                              <Color red="0.9607843160629272" green="0.8705882430076599" blue="0.7019608020782471" opacity="0.36000001430511475" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.949999988079071" green="0.8668749928474426" blue="0.7124999761581421" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Rectangle>
+            <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="#e2c4e178" height="179.0" layoutX="25.0" layoutY="839.0" strokeType="INSIDE" width="500.0">
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8666666746139526" green="0.6274510025978088" blue="0.8666666746139526" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.9969465648854962">
+                           <color>
+                              <Color red="0.9607843160629272" green="0.8705882430076599" blue="0.7019608020782471" opacity="0.36000001430511475" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9607843160629272" green="0.8705882430076599" blue="0.7019608020782471" opacity="0.36000001430511475" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Rectangle>
+              <TextArea fx:id="showArea" layoutX="25.0" layoutY="30.0" opacity="0.8" prefHeight="756.0" prefWidth="500.0" wrapText="true" />
+            <VBox fx:id="vBox" layoutX="25.0" layoutY="839.0" prefHeight="179.0" prefWidth="500.0" />
+         </children></AnchorPane>
+        <Button fx:id="back" layoutX="1170.0" layoutY="36.0" prefHeight="100.0" prefWidth="170.0" text="Back" />
+      <Label fx:id="report" alignment="TOP_CENTER" layoutX="139.0" layoutY="752.0" prefHeight="59.0" prefWidth="533.0" text="Wait for second Player to join..." textAlignment="CENTER">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+    </children>
+
+</AnchorPane>

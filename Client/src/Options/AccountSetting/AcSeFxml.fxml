@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="616.0" prefWidth="492.0" stylesheets="@../Main/OptionsStyle.css" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Options.AccountSetting.AcSeCon">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="636.0" fitWidth="517.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Resources/Photos/Border_Option.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="changePassLbl" layoutX="74.0" layoutY="221.0" onMouseClicked="#openChangePass" stylesheets="@../Main/OptionsStyle.css" text="Change Your Password">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="changeNameLbl" layoutX="69.0" layoutY="295.0" onMouseClicked="#openChangeName" stylesheets="@../Main/OptionsStyle.css" text="Change Your Username">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="deleteAccLbl" layoutX="133.0" layoutY="369.0" onMouseClicked="#openDeleteAcc" stylesheets="@../Main/OptionsStyle.css" text="Delete Account">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="logoutLbl" layoutX="188.0" layoutY="443.0" onMouseClicked="#openLogOut" stylesheets="@../Main/OptionsStyle.css" text="Log Out">
+         <font>
+            <Font size="35.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Resources/Photos/LogOutIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+   </children>
+</AnchorPane>

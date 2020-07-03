@@ -1,0 +1,10 @@
+
+/*progress-bar*/
+.progressBar .bar{
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+    -fx-background-color: linear-gradient(to right, #745e82, #b27b5f);
+}
+.progressBar .track{
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+    -fx-background-color: white;
+}

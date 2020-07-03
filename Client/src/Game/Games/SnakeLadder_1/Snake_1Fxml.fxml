@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../Common/GameStyle.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.Games.SnakeLadder_1.Snake_1Con">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="1000.0" fitWidth="1900.0" />
+      <Button fx:id="exit" contentDisplay="BOTTOM" layoutX="1791.0" mnemonicParsing="false" onAction="#quit" opacity="0.72" prefHeight="87.0" prefWidth="127.0" text="Exit" />
+      <Button fx:id="mute" contentDisplay="BOTTOM" layoutX="1780.0" mnemonicParsing="false" opacity="0.72" prefHeight="87.0" prefWidth="145.0" text="Mute" />
+      <Button fx:id="menu" contentDisplay="BOTTOM" layoutX="1780.0" layoutY="10.0" mnemonicParsing="false" onAction="#goMenu" opacity="0.72" prefHeight="87.0" text="Menu" />
+      <Button fx:id="options" graphicTextGap="5.0" layoutX="1760.0" prefHeight="134.0" prefWidth="165.0" style="-fx-background-color: linear-gradient(to right, thistle,  #BAA19A); -fx-background-radius: 20; -fx-border-width: 4;">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8666666746139526" green="0.6274510025978088" blue="0.8666666746139526" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <graphic>
+            <ImageView fx:id="optionsIm" fitHeight="108.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Resources/Photos/Options.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="back" layoutX="27.0" layoutY="31.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+      <Label fx:id="report" layoutX="1086.0" layoutY="697.0"/>
+      <Button fx:id="roll" layoutX="1708.0" layoutY="753.0" mnemonicParsing="false" text="Roll" />
+      <ImageView fx:id="board" fitHeight="150.0" fitWidth="200.0" layoutX="925.0" layoutY="267.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Resources/Photos/snake_board.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

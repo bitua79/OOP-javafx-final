@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="375.0" maxWidth="675.0" minHeight="375.0" minWidth="675.0" prefHeight="375.0" prefWidth="675.0" stylesheets="@../../Main/OptionsStyle.css" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Options.AccountSetting.ChangeName.ChangeNameCon">
+    <children>
+        <ImageView fx:id="imageView" fitHeight="275.0" fitWidth="416.0" layoutX="129.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Resources/Photos/Alarm.png" />
+            </image>
+        </ImageView>
+        <ImageView id="icon" fx:id="yesIMG" disable="true" fitHeight="71.0" fitWidth="84.0" layoutX="333.0" layoutY="235.0" onMouseClicked="#Yes" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Resources/Photos/Border_Yes.no.png" />
+            </image>
+        </ImageView>
+        <ImageView id="icon" fx:id="noIMG" fitHeight="71.0" fitWidth="84.0" layoutX="416.0" layoutY="235.0" onMouseClicked="#No" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Resources/Photos/Border_Yes.no.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="yesLbl" disable="true" layoutX="364.0" layoutY="258.0" onMouseClicked="#Yes" stylesheets="@../../Main/OptionsStyle.css" text="Yes" />
+        <Label fx:id="questionLbl" layoutX="337.0" layoutY="87.0" prefHeight="20.0" prefWidth="163.0" stylesheets="@../../Main/OptionsStyle.css" text="Are You Sure?" textAlignment="CENTER" wrapText="true" />
+        <Label fx:id="noLbl" layoutX="449.0" layoutY="258.0" onMouseClicked="#No" stylesheets="@../../Main/OptionsStyle.css" text="No" />
+        <TextField id="Wrong-text-field" fx:id="passField" layoutX="350.0" layoutY="115.0" prefHeight="27.0" prefWidth="147.0" promptText="enter your password" stylesheets="@../../Main/OptionsStyle.css">
+            <font>
+                <Font size="10.0" />
+            </font></TextField>
+        <Label fx:id="report" layoutX="350.0" layoutY="204.0" />
+        <TextField fx:id="newNameField" layoutX="350.0" layoutY="144.0" prefHeight="27.0" prefWidth="147.0" stylesheets="@../../Main/OptionsStyle.css" text="enter your new username">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </TextField>
+    </children>
+</AnchorPane>

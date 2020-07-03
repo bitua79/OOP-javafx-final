@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="1000.0" maxWidth="1900.0" minHeight="1080.0" minWidth="1920.0" prefHeight="1000.0" prefWidth="1900.0" stylesheets="@GameListStyle.css" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.GameList.GameListCon">
+    <children>
+        <ImageView fx:id="backImage" fitHeight="1237.0" fitWidth="1975.0" layoutY="-72.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../Resources/Photos/GameList.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="frontImage" fitHeight="1155.0" fitWidth="2055.0" layoutX="-111.0" layoutY="-62.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../Resources/Photos/GameListBack.gif" />
+            </image>
+        </ImageView>
+        <Button fx:id="back" layoutX="1708.0" layoutY="742.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="148.0" stylesheets="@GameListStyle.css" text="Back" />
+        <ImageView id="icon" fx:id="tic_tac_toeIMG" fitHeight="457.0" fitWidth="531.0" layoutX="1355.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#openTicMod">
+            <image>
+                <Image url="@../../Resources/Photos/Border_Game.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="tic_tac_toeLbl" layoutX="1509.0" layoutY="183.0" opacity="0.75" text="Tic Tac Toe" onMouseClicked="#openTicMod">
+            <font>
+                <Font size="60.0" />
+            </font>
+        </Label>
+        <ImageView id="icon" fx:id="snack_ladderIMG" fitHeight="457.0" fitWidth="531.0" layoutX="704.0" layoutY="617.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#openSnakeMod">
+            <image>
+                <Image url="@../../Resources/Photos/Border_Game.png" />
+            </image>
+        </ImageView>
+      <ImageView id="icon" fx:id="battle_shipIMG" fitHeight="457.0" fitWidth="531.0" layoutX="1048.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#openBattleMod">
+         <image>
+            <Image url="@../../Resources/Photos/Border_Game.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="snack_ladderLbl" layoutX="1196.0" layoutY="426.0" opacity="0.75" prefHeight="211.0" prefWidth="235.0" text="Snake and ladder" textAlignment="CENTER" wrapText="true" onMouseClicked="#openSnakeMod">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+        <Label fx:id="battle_shipLbl" layoutX="845.0" layoutY="784.0" opacity="0.75" text="Battle Ship" onMouseClicked="#openBattleMod">
+            <font>
+                <Font size="60.0" />
+            </font>
+        </Label>
+      <Button fx:id="gameResult" layoutX="1745.0" layoutY="999.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="148.0" text="Game Result" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+
+.label {
+    /*-fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.7), 6, 0.0, 0, 2);*/
+    -fx-text-fill: linear-gradient(to right, #BAA19A, #9A746E);
+}
+.label :hover {
+    -fx-effect: dropshadow(gaussian, navy, 2, 0.2, 2, 2);
+    -fx-translate-y: 3;
+}
+.label :pressed{
+    -fx-translate-y: 2;
+}
+
+
+#icon{
+    -fx-image : url('../Resources/Photos/LogOutIcon.png');
+}
+#icon:focused{
+    -fx-effect: dropshadow(three-pass-box, #745e82, 2, 0.2, 2, 2);
+    -fx-translate-y: 3;
+}

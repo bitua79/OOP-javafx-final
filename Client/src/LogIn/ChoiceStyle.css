@@ -1,0 +1,20 @@
+/*Label*/
+.label {
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+    -fx-text-fill: linear-gradient(to left, wheat, plum);
+    -fx-font-family: "Gabriola";
+    -fx-font-size: 30;
+}
+.label :hover {
+    -fx-effect: dropshadow(gaussian, navy, 2, 0.2, 2, 2);
+    -fx-translate-y: 3;
+}
+.label :pressed{
+    -fx-translate-y: 2;
+}
+#choice{
+    -fx-border-color: linear-gradient(to right, wheat, plum);
+    -fx-background-color: transparent;
+    -fx-border-width: 2;
+    -fx-font-size: 30;
+}

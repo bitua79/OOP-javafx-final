@@ -1,0 +1,105 @@
+.button {
+    /*-fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );*/
+    -fx-border-color: linear-gradient(to left, wheat,  plum);
+    -fx-text-fill: linear-gradient(to left, wheat, plum);
+    -fx-background-color: transparent;
+    -fx-padding: 10 20 10 20;
+    -fx-border-radius: 15px;
+    -fx-border-width: 4;
+}
+.button :pressed {
+    -fx-translate-y: 2;
+    -fx-scale-z: 2;
+}
+.button:hover {
+    -fx-effect: dropshadow(gaussian, plum, 2, 0.2, 2, 2);
+}
+
+
+
+#icon{
+    -fx-image : url('../../../Resources/Photos/Border_Yes.no.png');
+}
+#icon:hover{
+    -fx-effect: dropshadow(three-pass-box, #745e82, 2, 0.2, 2, 2);
+    -fx-translate-y: 3;
+}
+
+
+
+.text-area {
+    -fx-border-color: linear-gradient(to right, wheat, plum);
+    -fx-text-fill: linear-gradient(to left, #745e82, #b27b5f);
+    -fx-background-color: transparent;
+    -fx-border-radius: 15px;
+    -fx-border-width: 2;
+}
+
+
+
+.label {
+    /*-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );*/
+    -fx-text-fill: linear-gradient(to right, wheat, plum);
+
+}
+.label :hover {
+    -fx-effect: dropshadow(gaussian, thistle, 2, 0.2, 2, 2);
+    -fx-translate-y: 3;
+}
+
+.progress-indicator .percentage{
+    -fx-fill: linear-gradient(to right, wheat, plum);
+}
+
+#ReqLbl{
+    -fx-text-fill: linear-gradient(to right, wheat, #9A8E7C);
+}
+
+
+.text-field {
+    -fx-border-color: linear-gradient(to right, wheat, plum);
+    -fx-text-fill: linear-gradient(to left, #745e82, #b27b5f);
+    -fx-background-color: transparent;
+    -fx-border-radius: 15px;
+    -fx-border-width: 2;
+}
+
+
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+.scroll-bar
+{
+    -fx-background-color: transparent;
+}
+.scroll-bar .thumb
+{
+    -fx-background-radius: 30;
+    -fx-background-color: linear-gradient(to left, wheat, plum);
+}
+.scroll-bar .increment-button ,
+.scroll-bar .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 10.0 0.0 0.0;
+
+}
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow
+{
+    -fx-shape : " ";
+    -fx-padding :0.15em 0.0;
+}
+
+.scroll-bar .thumb:hover
+{
+    -fx-background-color: white;
+}
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+
+
+

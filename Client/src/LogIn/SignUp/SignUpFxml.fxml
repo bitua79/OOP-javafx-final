@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" opacity="0.82" prefHeight="1000.0" prefWidth="1900.0" styleClass="AnchorPane" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LogIn.SignUp.SignUpCon">
+    <children>
+        <ImageView fx:id="imageView" fitHeight="885.0" fitWidth="709.0" layoutX="460.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../Resources/Photos/SignUp.png" />
+            </image>
+         <effect>
+            <DropShadow color="#a19a9a" height="193.55" offsetX="6.0" radius="96.275" spread="0.25" width="193.55" />
+         </effect>
+        </ImageView>
+        <TextField fx:id="nameField" layoutX="730.0" layoutY="280.0" onKeyPressed="#handleEnter" onKeyReleased="#handleEnter" prefHeight="60.0" prefWidth="240.0" snapToPixel="false" stylesheets="@SignUpStyle.css">
+         <font>
+            <Font size="30.0" />
+         </font></TextField>
+        <TextField fx:id="passField" layoutX="730.0" layoutY="355.0" onKeyPressed="#handleEnter" onKeyReleased="#handleEnter" prefHeight="60.0" prefWidth="240.0" stylesheets="@SignUpStyle.css">
+         <font>
+            <Font size="30.0" />
+         </font></TextField>
+        <TextField fx:id="answerField" layoutX="730.0" layoutY="574.0" onKeyPressed="#handleEnter" onKeyReleased="#handleEnter" prefHeight="60.0" prefWidth="240.0" stylesheets="@SignUpStyle.css">
+         <font>
+            <Font size="30.0" />
+         </font></TextField>
+        <Label fx:id="nameLbl" layoutX="638.0" layoutY="285.0" stylesheets="@SignUpStyle.css" text="name:">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Label>
+        <Label fx:id="passLbl" layoutX="612.0" layoutY="360.0" stylesheets="@SignUpStyle.css" text="password:">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Label>
+        <Label fx:id="answerLbl" layoutX="628.0" layoutY="579.0" stylesheets="@SignUpStyle.css" text="answer:">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Label>
+        <Label fx:id="questionLbl" layoutX="620.0" layoutY="512.0" stylesheets="@SignUpStyle.css" text="question:">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Label>
+        <ChoiceBox id="choice" fx:id="questionBox" layoutX="718.0" layoutY="506.0" stylesheets="@../ChoiceStyle.css" value="Favorite color">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Favorite color" />
+                    <String fx:value="Favorite pet" />
+                    <String fx:value="Favorite food" />
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+        <Button fx:id="enter" disable="true" layoutX="907.0" layoutY="879.0" mnemonicParsing="false" onAction="#SignUp" stylesheets="@SignUpStyle.css" text="Sign Up" />
+        <TextField fx:id="emailField" layoutX="718.0" layoutY="425.0" onKeyPressed="#handleEnter" onKeyReleased="#handleEnter" prefHeight="60.0" prefWidth="240.0" stylesheets="@SignUpStyle.css">
+         <font>
+            <Font size="30.0" />
+         </font></TextField>
+        <Label fx:id="emailLbl" layoutX="634.0" layoutY="430.0" stylesheets="@SignUpStyle.css" text="email:">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Label>
+        <Button fx:id="back" layoutX="519.0" layoutY="83.0" mnemonicParsing="false" onAction="#backToSignIn" prefHeight="40.0" prefWidth="83.0" stylesheets="@SignUpStyle.css" text="Back" />
+        <Label id="reportUp" fx:id="report" layoutX="612.0" layoutY="680.0" prefHeight="90.0" prefWidth="323.0" stylesheets="@SignUpStyle.css" text="     " textAlignment="CENTER" wrapText="true" />
+    </children>
+</AnchorPane>

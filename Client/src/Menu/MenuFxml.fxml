@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="375.0" prefWidth="675.0" stylesheets="@MenuStyle.css" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Menu.MenuCon">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" layoutX="-5.0" />
+      <Label fx:id="games" layoutX="429.0" layoutY="117.0" text="Games" />
+      <Label fx:id="options" layoutX="429.0" layoutY="206.0" text="Options" />
+      <Label fx:id="chat" layoutX="439.0" layoutY="161.0" text="Chat" />
+      <Label fx:id="name" layoutX="442.0" layoutY="36.0" text="Erienne">
+         <effect>
+            <InnerShadow height="2.0" radius="0.0" width="0.0" />
+         </effect></Label>
+      <Label fx:id="exit" layoutX="443.0" layoutY="263.0" text="Exit" />
+      <Label fx:id="welcome" text="welcome" textAlignment="RIGHT" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@GameStyle.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+
+    <children>
+        <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="#d2c7d285" height="2000.0" stroke="TRANSPARENT" strokeType="INSIDE" width="2000.0" />
+        <ImageView fx:id="backImg" fitHeight="275.0" fitWidth="416.0" layoutX="129.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Resources/Photos/Alarm.png" />
+            </image>
+         <effect>
+            <BoxBlur height="77.71" width="39.0" />
+         </effect>
+        </ImageView>
+      <ImageView fx:id="imageView" fitHeight="275.0" fitWidth="416.0" layoutX="129.0" layoutY="71.0" opacity="0.79" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Resources/Photos/Alarm.png" />
+         </image>
+      </ImageView>
+        <ImageView id="icon" fx:id="yesIMG" fitHeight="71.0" fitWidth="84.0" layoutX="332.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Resources/Photos/Border_Yes.no.png" />
+            </image>
+        </ImageView>
+        <ImageView id="icon" fx:id="noIMG" fitHeight="71.0" fitWidth="84.0" layoutX="415.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Resources/Photos/Border_Yes.no.png" />
+            </image>
+        </ImageView>
+        <Label id="ReqLbl" fx:id="yesLbl" layoutX="363.0" layoutY="225.0" text="Yes" />
+        <Label id="ReqLbl" fx:id="questionLbl" layoutX="355.0" layoutY="97.0" prefHeight="20.0" prefWidth="163.0" text="Do you want to play with " textAlignment="CENTER" wrapText="true" />
+        <Label id="ReqLbl" fx:id="noLbl" layoutX="448.0" layoutY="225.0" text="No" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+
+.label {
+    -fx-effect: dropshadow( three-pass-box , black , 6, 0.0 , 0 , 2 );
+    -fx-text-fill: linear-gradient(to left, wheat, #b27b5f);
+}
+.label :hover {
+    -fx-effect: dropshadow(gaussian, navy, 2, 0.2, 2, 2);
+    -fx-translate-y: 3;
+}
+
+
+
+#image{
+    -fx-image : url('../../Resources/Photos/Border_Mod.png');
+}
+#image:hover{
+    -fx-effect: dropshadow(three-pass-box, #745e82, 2, 0.2, 2, 2);
+    -fx-translate-y: 3;
+}
+
+
+
+#icon{
+    -fx-image : url('../../Resources/Photos/Border_Mod.png');
+}
+#icon:hover{
+    -fx-effect: dropshadow(three-pass-box, #745e82, 2, 0.2, 2, 2);
+    -fx-translate-y: 3;
+}
+
+
+
+.button {
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+    -fx-border-color: linear-gradient(to right, wheat,  #b27b5f);
+    -fx-text-fill: linear-gradient(to right, wheat,  #b27b5f);
+    -fx-background-color: transparent;
+    -fx-padding: 10 20 10 20;
+    -fx-border-radius: 15px;
+    -fx-border-width: 4;
+}
+.button :pressed {
+    -fx-translate-y: 2;
+    -fx-scale-z: 2
+}
+.button:hover {
+    -fx-effect: dropshadow(gaussian, plum, 2, 0.2, 2, 2);
+}
