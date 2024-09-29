@@ -48,16 +48,16 @@ This project is my OOP final project with Dr. Mostafa Nouri Baygi ([Webpage](htt
 - Game setting:
 <p align="center">
    <img src="screenshots/menu.png" alt="Loading Screenshot" width="400"/>
-   <img src="screenshots/game list.png" alt="Setting Screenshot" width="400"/>
-   <img src="screenshots/game mode.png" alt="Setting Screenshot" width="400"/>
-   <img src="screenshots/friend choose.png" alt="Setting Screenshot" width="400"/>
+   <img src="screenshots/game list.png" alt="Gmae List Screenshot" width="400"/>
+   <img src="screenshots/game mode.png" alt="Game Mode Screenshot" width="400"/>
+   <img src="screenshots/friend choose.png" alt="Friend Choose Screenshot" width="400"/>
 </p>
 
 - Game display:
 <p align="center">
-   <img src="screenshots/tic tac toe.png" alt="Loading Screenshot" width="400"/>
-   <img src="screenshots/ludo.png" alt="Setting Screenshot" width="400"/>
-   <img src="screenshots/lose.png" alt="Setting Screenshot" width="400"/>
+   <img src="screenshots/tic tac toe.png" alt="Tic Tac Toe Screenshot" width="400"/>
+   <img src="screenshots/ludo.png" alt="Ludo Screenshot" width="400"/>
+   <img src="screenshots/lose.png" alt="Losi Screenshot" width="400"/>
 </p>
 
 ## Usage
