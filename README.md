@@ -1,5 +1,5 @@
 # Erinne game platform (JavaFX Project)
-This project is my OOP final project with Dr. Mostafa Nouri Baygi ([Webpage](http://prof.um.ac.ir/nouribaygi)), focusing on creating a multi-feature gaming platform using JavaFX. The application provides single-player and two-player games with chat functionality.
+This project is my OOP final project with Professor. Mostafa Nouri Baygi ([Webpage](http://prof.um.ac.ir/nouribaygi)), focusing on creating a multi-feature gaming platform using JavaFX. The application provides single-player and two-player games with chat functionality.
 
 ## Features
 
